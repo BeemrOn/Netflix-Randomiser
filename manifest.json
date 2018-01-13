@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+
+    "name": "RaNdomiser",
+    "description": "This extension will randomly select a TV show or Movie from your Netflix List",
+    "version": "0.1",
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+      },
+
+    "icons": { 
+        "16": "netflix.png",
+        "48": "netflix.png",
+        "128": "netflix.png" 
+    },
+
+    "page_action": {
+      "default_icon": "netflix.png" //toolbar icon
+    },
+
+    "permissions": ["declarativeContent", "activeTab", "tabs"]
+  }
