@@ -31,14 +31,7 @@ chrome.pageAction.onClicked.addListener(function() {
 });
 
 function readTitles(result){
-    console.log(result[0]);
     if (result[0] != 'null') {
         chrome.tabs.create({ url: result[0]});
     }
-}
-
-function getRandomIntInclusive(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive 
 }
