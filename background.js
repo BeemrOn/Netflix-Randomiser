@@ -20,18 +20,3 @@ chrome.runtime.onInstalled.addListener(function() {
         ]);
     });
 });
-
-chrome.pageAction.onClicked.addListener(function() {
-    chrome.tabs.executeScript(
-        {file:
-        "contentscript.js"
-        }, 
-        readTitles
-    );
-});
-
-function readTitles(result){
-    if (result[0] != 'null') {
-        chrome.tabs.create({ url: result[0]});
-    }
-}
