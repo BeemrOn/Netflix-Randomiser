@@ -16,8 +16,9 @@
     },
 
     "page_action": {
-      "default_icon": "netflix.png"
+      "default_icon": "netflix.png",
+      "default_popup": "popup.html"
     },
 
-    "permissions": ["declarativeContent", "activeTab", "tabs"]
+    "permissions": ["declarativeContent", "activeTab"]
   }

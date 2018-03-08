@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="popup.js"></script>
 </head>
 <body>
     <div class="button-container" id="container2">
-        <button type="button" class="button" id="scroll" formtarget="_self">Load Titles</button>
-        <span class="tooltiptext" id="scrolltip">click me first</span>
-        <button type="button" class="button" id="randomise" formtarget="_self">Randomise!</button>
-        <span class="tooltiptext" id="scrolltip">click me when all titles are loaded</span>
+        <div>
+            <button type="button" class="button" id="scroll">Load Titles</button>
+            <span class="helper" id="helper">click me first</span>
+        </div>
+        <div>
+            <button type="button" class="button" id="randomise">Randomise!</button>
+            <span class="helper" id="helper">click me second</span>
+        </div>
     </div>
 </body>
 </html>
