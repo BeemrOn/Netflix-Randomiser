@@ -1,1 +1,1 @@
-setInterval(function() {window.scrollTo(0, document.body.scrollHeight)}, 500);
+var scroller = setInterval(function() {window.scrollTo(0, document.body.scrollHeight)}, 500);

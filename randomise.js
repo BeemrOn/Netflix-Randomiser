@@ -1,5 +1,7 @@
 var auto = 1; // 0 will prompt to confirm, 1 will autoplay
 
+clearInterval(scroller);
+
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
